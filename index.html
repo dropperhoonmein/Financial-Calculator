@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Financial Calculator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sip">
+                <h2>SIP</h2>
+                <input type="number" name="" id="sipAmount" placeholder="Monthly Investment" value="1000">
+                <div>
+                    <span>Rate of Interest (Annual)</span>
+                    <input type="range" name="" id="rate" min="0" max="100" class="range" value="12">
+                    <span id="displayRate">12%</span>
+                </div>
+                <div>
+                    <span>Number of Years</span>
+                    <input type="range" name="" id="yr" min="0" max="60" class="range" value="5">
+                    <span id="displayYears">5 Years</span>
+                </div>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Invested</td>
+                        <td id="invested" class="data">-</td>
+                    </tr>
+                    <tr>
+                        <td>Returns</td>
+                        <td id="returns" class="data">-</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td id="totalVal" class="data">-</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
